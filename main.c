@@ -126,11 +126,7 @@ int showPoly(int *pstArray, int nLen)
             if (1 == loop){ //打印1次项
                 printf("x");
             }
-            else if (0 == loop){ //打印常数项
-                printf("%d", pstArray[0]);
-                break;
-            }
-            else{ //输出常规项
+            else if (0 != loop){ //其他非常数项正常打印
                 printf("x%d", loop);
             }
         }
